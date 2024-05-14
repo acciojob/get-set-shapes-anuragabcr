@@ -19,6 +19,9 @@ class Square extends Animal {
 	constructor(side) {
 		this.side = side
 	}
+	getArea() {
+		return this.side*this.side
+	}
 	getPerimeter() {
 		return 4 * this.side
 	}
