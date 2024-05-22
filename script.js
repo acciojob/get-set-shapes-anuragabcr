@@ -13,18 +13,14 @@ class Rectangle {
 	getArea() {
 		return this.width*this.height
 	}
+	getPerimeter() {
+		return 2 * this.width * this.height
+	}
 }
 
 class Square extends Rectangle {
 	constructor(side) {
-		super()
-		this.side = side
-	}
-	getArea() {
-		return this.side*this.side
-	}
-	getPerimeter() {
-		return 4 * this.side
+		super(side, side)
 	}
 }
 
